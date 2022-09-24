@@ -22,46 +22,49 @@
 ---
 ###### Data Structure
 ## 🧪 Data Structure [Link](/contents/DataStructure/README.md)
-- #### [Array](/contents/DataStructure/)
+- [자료구조란?](/contents/DataStructure/README.md#자료구조란?)
+- [List (리스트)](/contents/DataStructure/README.md#list-리스트)
+- [Array (배열)](/contents/DataStructure/README.md#array-배열)
 <br>
 <br>
 
 ###### Network
-## 📶 Network [Link]()
+## 📶 Network
 <br>
 <br>
 
 ###### Database
-## 💾 Database [Link]()
+## 💾 Database
 <br>
 <br>
 
 ###### Algorithm
-## 🧮 Algorithm [Link]()
+## 🧮 Algorithm
 <br>
 <br>
 
 ###### Design Pattern
-## 🎨 Design Pattern [Link]()
+## 🎨 Design Pattern
 <br>
 <br>
 
 ###### Web
-## 🌐 Web [Link]()
+## 🌐 Web
+- [클라이언트와 서버](/contents/Web/ClientAndServer.md)
 <br>
 <br>
 
 ###### Operating System
-## 💽 Operating System(OS) [Link]()
+## 💽 Operating System(OS)
 <br>
 <br>
 
 ###### Language
-## 🎧 Language [Link]()
+## 🎧 Language
 <br>
 <br>
 
 ###### ETC
-## 🎸 ETC [Link]()
+## 🎸 ETC
 <br>
 <br>
