@@ -15,6 +15,7 @@
 - [Design Pattern](#design-pattern)
 - [Web](#Web)
 - [Operating System(OS)](#operating-system)
+- [Computer Architecture](#computer-architecture)
 - [Language](#language)
 - [ETC](#ETC)  
 <br>
@@ -25,6 +26,7 @@
 - [자료구조란?](/contents/DataStructure/README.md#자료구조란?)
 - [List (리스트)](/contents/DataStructure/README.md#list-리스트)
 - [Array (배열)](/contents/DataStructure/README.md#array-배열)
+- [Stack (스택) & Queue (큐)](/contents/DataStructure/README.md#stack-스택-queue-큐)
 <br>
 <br>
 
@@ -36,6 +38,7 @@
 
 ###### Database
 ## 💾 Database
+- [데이터베이스란?](/contents/Database/database.md)
 <br>
 <br>
 
@@ -52,11 +55,18 @@
 ###### Web
 ## 🌐 Web
 - [클라이언트와 서버](/contents/Web/ClientAndServer.md)
+- [DNS](/contents/Web/DNS.md)
 <br>
 <br>
 
 ###### Operating System
 ## 💽 Operating System(OS)
+<br>
+<br>
+
+###### Computer Architecture
+## 💻 Computer Architecture
+- [컴퓨터 구조 기초](/contents/ComputerArchitecture/ComputerArchitecture.md)
 <br>
 <br>
 
