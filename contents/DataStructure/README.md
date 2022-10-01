@@ -7,6 +7,7 @@
   - 분류
 - [List (리스트)](#list-리스트)  
 - [Array (배열)](#array-배열)  
+- [Stack(스택) & Queue(큐)](#stack-스택-queue-큐)  
 <br>
 <br>
 <br>
@@ -51,8 +52,7 @@
   보조 기억장치에 데이터가 실제로 기록되는 형태  
 <br>
 <br>
-
-![data_structure_classification](../../resources/data_structure_classification.png) 
+<img src="../../resources/data_structure_classification.png" width="70%">
 
 <br>
 <br>
@@ -122,9 +122,71 @@
 <br>
 
 💡 오버헤드(overhead) 란?  
-어떤 처리를 하기 위해 들어가는 간접적인 처리 시간 &middot; 메모리 등
+어떤 처리를 하기 위해 들어가는 간접적인 처리 시간 &middot; 메모리 등  
 <br>
 <br>
 <br>
 
 ##### [🔼 목차로 이동](#content)
+---
+## Stack(스택) & Queue(큐)
+<br>
+
+<img src="../../resources/stack_and_queue.png">
+<br>
+
+## 스택(Stack) 이란?
+- 제한적으로 접근할 수 있는 나열 구조
+- 한 쪽 끝에서만 자료를 넣거나 뺄 수 있는 선형 구조
+<br>
+
+### 스택(Stack)의 특징
+- LIFO (Last In First Out)
+- 가장 최근에 삽입된 자료의 위치를 top 이라 한다.
+- 스택의 맨 위 요소(top)에만 접근이 가능하기 때문에 top이 아닌 위치의 데이터에 대한 접근, 삽입, 삭제는 모두 불가능하다.
+- top위치의 데이터에 바로 접근이 가능하기 때문에 데이터 삽입, 삭제의 시간 복잡도는 O(1)이다.
+- top을 통해 접근하기 때문에 데이터 접근, 삽입, 삭제가 빠르다
+- top 이외의 위치의 데이터를 탐색하려면 모든 데이터를 꺼내면서 진행해야 한다.
+<br>
+
+### 스택(Stack)의 연산
+- push() : item 하나를 스택의 가장 윗 부분에 추가
+- pop() : 스택에서 가장 위에 있는 항목 제거
+- peek() : 스택의 가장 위에 있는 항목 반환
+- isEmpty() : 스택이 비어 있을 때 true 반환
+
+### 스택(Stack) 활용 예시
+- 웹브라우저 방문기록 (뒤로가기) : 가장 마지막에 방문한 페이지부터 뒤로가기 
+- 실행 취소 (undo) : 가장 마지막에 실행된 것부터 실행 취소
+- 자바스크립트 Call Stack
+- 연산자 후위 표기법  
+- 문자열 역순 출력
+<br>
+<br>
+
+## 큐(Queue) 란?
+- 먼저 집어 넣은 데이터가 먼저 나오는 구조
+- 양쪽 끝에서 데이터의 삽입과 삭제가 각각 이루어지는 선형 구조
+<br>
+
+### 큐(Queue)의 특징
+- FIFO (First In First Out)
+- 큐의 가장 첫 원소를 front, 끝 원소를 rear 라고 한다. (데이터가 삽입되는 곳을 rear, 데이터가 제거되는 곳을 front)
+- 선형 큐(Linear Queue)와 원형 큐(Circular Queue)가 있다.
+- front, rear의 위치로 데이터 삽입 삭제가 바로 이루어지기 때문에 원소 삽입, 삭제의 시간 복잡도는 O(1)이다.
+- 데이터 접근, 삽입, 삭제가 빠르다.
+- 스택과 마찬가지로 중간에 위치한 데이터에 대한 접근이 불가능하다.
+<br>
+
+### 큐(Queue)이 연산
+- add(): item을 리스트의 끝부분에 추가
+- remove(): 리스트의 첫 번째 항목 제거
+- peek(): 큐에서 가장 위에 있는 항목 반환
+- isEmpty(): 큐가 비어 있을 때 true 반환
+
+### 큐(Queue) 활용 예시
+- Buffer  
+- 캐시(Cache) 구현
+- 데이터가 입력된 시간 순서대로 처리할 경우
+- 콜센터 고객 대기시간 (대기순서 관리)
+<br>
