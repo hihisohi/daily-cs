@@ -38,7 +38,8 @@
 
 ## 📶 Network [Link](./contents/Network/README.md)
 
-- [TCP와 UDP의 특징과 차이](./contents/Network/README.md#TCP-UDP)
+- [TCP와 UDP의 특징과 차이](/contents/Network/README.md#TCP-UDP)
+- [HTTP](/contents/Network/README.md#HTTP)
   <br>
   <br>
 
@@ -47,6 +48,7 @@
 ## 💾 Database
 
 - [데이터베이스란?](/contents/Database/database.md)
+- [데이터 모델](/contents/Database/Datamodle.md)
   <br>
   <br>
 
@@ -77,6 +79,7 @@
 
 ## 💽 Operating System(OS)
 
+- [운영체제란?](/contents/OperatingSystem/READMD.md#운영체제란)
 <br>
 <br>
 
@@ -85,6 +88,7 @@
 ## 💻 Computer Architecture
 
 - [컴퓨터 구조 기초](/contents/ComputerArchitecture/ComputerArchitecture.md)
+- [아스키코드와 유니코드](/contents/ComputerArchitecture/UNICODE.md)
   <br>
   <br>
 
@@ -93,9 +97,9 @@
 ## 🎧 Language
 
 - [JavaScript](/contents/Language)
-  - [FirstClassFunction](/contents/Language/FirstClassFunction.md)
-    <br>
-    <br>
+- [FirstClassFunction](/contents/Language/FirstClassFunction.md)
+<br>
+<br>
 
 ###### ETC
 
