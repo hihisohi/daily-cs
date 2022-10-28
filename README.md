@@ -96,6 +96,8 @@
 
 ## 🎧 Language
 
+- [JavaScript](/contents/Language)
+- [FirstClassFunction](/contents/Language/FirstClassFunction.md)
 <br>
 <br>
 
