@@ -49,7 +49,7 @@
 
 - [데이터베이스란?](/contents/Database/database.md)
 - [데이터 모델](/contents/Database/Datamodle.md)
-  <br>
+- [관계형 데이터베이스](/contents/Database/RDB.md)
   <br>
 
 ###### Algorithm
