@@ -36,10 +36,11 @@
 
 ###### Network
 
-## 📶 Network [Link](./contents/Network/README.md)
+## 📶 Network [Link](/contents/Network/README.md)
 
-- [TCP와 UDP의 특징과 차이](/contents/Network/README.md#TCP-UDP)
-- [HTTP](/contents/Network/README.md#HTTP)
+- [TCP와 UDP의 특징과 차이](/contents/Network/README.md#tcp와-udp의-특징과-차이)
+- [HTTP](/contents/Network/README.md#http)
+- [GET과 POST](/contents/Network/README.md#get과-post)
   <br>
   <br>
 
@@ -80,8 +81,8 @@
 ## 💽 Operating System(OS)
 
 - [운영체제란?](/contents/OperatingSystem/READMD.md#운영체제란)
-<br>
-<br>
+  <br>
+  <br>
 
 ###### Computer Architecture
 
@@ -98,8 +99,8 @@
 
 - [JavaScript](/contents/Language)
 - [FirstClassFunction](/contents/Language/FirstClassFunction.md)
-<br>
-<br>
+  <br>
+  <br>
 
 ###### ETC
 
