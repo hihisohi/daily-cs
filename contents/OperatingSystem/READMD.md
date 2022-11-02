@@ -2,9 +2,8 @@
 
 ###### content
 - [운영체제(OS)란?](#운영체제란) 
-  - 정의
-  - 기능
 - [프로세스](#프로세스)  
+- [스레드](#스레드)  
 <br>
 <br>
 <br>
@@ -123,7 +122,44 @@
 
 ###### 이미지 출처 : https://rebro.kr/172?category=504670
 
+<br>
+<br>
 
+### ■ 프로세스 상태(Process State)  
+
+<img src="../../resources/process_state.png" width="80%">  
+
+###### 이미지 출처 : https://rebro.kr/172?category=504670
+
+- New : 프로세스가 생성되기 위해 준비 된 상태 (아직 보조 메모리에 프로그램 형태로 존재)
+- Ready : 메인 메모리에 적재되어 프로세스에 의해 실행되기를 대기하는 상태 (이 상태의 프로세스는 운영체제의 대기 큐에 존재)
+- Running : 프로세스가 할당되어 CPU를 잡고 명령을 수행 중인 상태
+- Waiting : 프로세스가 어떠한 이벤트가 발생하기를 기다리는 상태 (CPU를 할당해도 당장 명령을 수행할 수 없는 상태)
+- Terminated : 프로세스가 실행을 마친 상태 (프로세스 제어 블록이 삭제된다)
+
+<br>
+<br>
+
+### ■ 프로세스 제어 블록(Process Control Block - PCB)  
+```특정한 프로세스를 관리할 필요가 있는 정보를 포함하는 운영 체제 커널의 자료 구조```
+
+운영체제가 프로세스를 다룰 때 프로세스 제어 블록을 이용해서 다루게 된다. 커널의 주소 공간에 있으며 다음의 구성 요소를 갖는다. 
+
+#### 1. 운영체제가 관리상 사용하는 정보
+- Process state : 프로세스의 상태
+- Process ID
+- Scheduling information : 프로세스의 중요도, 스케줄링 큐 포인터 등 스케줄링 파라미터 정보
+- Priority : 프로세스의 우선순위
+ 
+#### 2. CPU 수행 관련 하드웨어 값
+- Program counter : 해당 프로세스가 이어서 실행해야 할 명령의 주소를 가리키는 포인터
+- Register : 프로세스가 인터럽트 이후 올바르게 작업을 이어가기 위해 참조하는 CPU 레지스터 값
+ 
+#### 3. 메모리 관련
+- Code, Data, Stack의 위치 정보, base/limit 레지스터 값
+ 
+#### 4. 파일 관련
+- open file descriptors : 열린 파일 목록
 
 
 <br>
@@ -138,6 +174,71 @@
 [🔗 [블로그] Rebro의 코딩 일기장 - [운영체제(OS)] 3. 프로세스(Process)](https://rebro.kr/172?category=504670)  
 [🔗 [블로그] 구름 개발일기장 - 3주차.Process 정리](https://ws-pace.tistory.com/20)  
 <br>
+
+##### [🔼 목차로 이동](#content)
+---
+## 스레드
+
+### ■ 스레드(Thread) 란?
+- 프로세스 안에서 실행되는 여러 흐름 단위
+- CPU 수행의 기본 단위 또는 프로세스 안의 제어권의 흐름
+- 한 개의 프로세스 내의 반드시 하나 이상의 스레드가 존재
+- Thread ID, Program counter, Register set, Stack space로 구성
+- 각각의 스레드는 주로 최소한 자신의 레지스터 상태와 스택을 가짐
+- Code, Data 섹션, 운영체제 자원들은 스레드끼리 공유 가능
+
+<img src="../../resources/os_thread.png" width="80%">  
+
+###### 이미지 출처 : https://rebro.kr/172?category=504670
+
+<br>
+
+### ■ 스레드 종류
+
+#### 싱글 스레드(Single thread)  
+: 한 프로세스가 하나의 스레드를 이용하여 한 번에 한 작업만 수행
+
+#### 멀티 스레드(Multi thread)  
+: 한 프로세스가 여러 스레드로 동시에 여러 작업을 수행
+
+<br>
+
+### ■ 스레드의 필요성
+
+프로세스 내의 스레드는 모두 각각 독립적인 실행 파일이며, 모든 스레드는 프로세스의 일부이다.  
+
+여러개의 작업 단위로 구성된 프로그램에서 요청을 동시에 처리하기 위함이다.  
+
+프로세스를 여러 개 수행해도 되지만 스레드를 사용하는 이유는
+ 
+1. 프로세스를 생성하거나 Context switching 하는 작업은 너무 무겁고 잦으면 성능 저하가 발생하는데 스레드를 생성하거나 switching 하는 것은 그에 비해 가볍다. 
+
+2. 두 프로세스가 하나의 데이터를 공유하려면 메시지 패싱이나 공유 메모리 또는 파이프를 사용해야 하는데 이는 효율이 떨어지고 개발자가 구현, 관리하기 번거롭다.
+
+<br>
+
+### ■ 스레드의 이점
+
+#### 1. 응답성 (Responsiveness)
+다른 스레드의 실행 시간이 길거나 입출력 요청으로 인해 block되더라도 계속 실행되는 것을 허용한다.
+
+#### 2. 자원 공유(Resource sharing)
+프로세스 내 자원(데이터, 코드, 힙)을 공유한다.
+
+#### 3. 경제성 (Economy)
+프로세스 생성을 위한 메모리와 자원 할당, 프로세스 간 문맥 교환(Context Switch)은 비용이 많이 들고 오버헤드가 발생한다. 반면, 스레드는 프로세스의 자원을 공유하고 있으므로 스레드 생성이나 문맥 교환 시 더 경제적이다.
+
+#### 4. 확장성 (Scalability)
+멀티 프로세서 구조에서는 스레드들이 각자 다른 프로세서 위에서 병렬적으로 실행되기 때문에 다중 CPU환경에서 병렬성이 크게 증가한다.
+
+<br>
+<br>
+<br>
+
+### 함께 보면 좋은 자료
+[🔗 [블로그] Rebro의 코딩 일기장 - [운영체제(OS)] 4. 멀티쓰레드](https://rebro.kr/174?category=504670)  
+[🔗 [Github] gyoogle - tech-interview-for-developer](https://github.com/gyoogle/tech-interview-for-developer/blob/master/Computer%20Science/Operating%20System/Process%20vs%20Thread.md)  
+ 
 
 ##### [🔼 목차로 이동](#content)
 ---
