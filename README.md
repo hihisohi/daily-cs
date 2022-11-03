@@ -81,6 +81,8 @@
 ## 💽 Operating System(OS)
 
 - [운영체제란?](/contents/OperatingSystem/READMD.md#운영체제란)
+- [프로세스](contents/OperatingSystem/READMD.md#프로세스)  
+- [스레드](contents/OperatingSystem/READMD.md#스레드)  
   <br>
   <br>
 
