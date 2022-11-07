@@ -51,7 +51,7 @@
 - [데이터베이스란?](/contents/Database/database.md)
 - [데이터 모델](/contents/Database/Datamodle.md)
 - [관계형 데이터베이스](/contents/Database/RDB.md)
-- [관계형 데이터베이스](/contents/Database/Relational_Algebra.md)
+- [관계대수](/contents/Database/Relational_Algebra.md)
   <br>
 
 ###### Algorithm
