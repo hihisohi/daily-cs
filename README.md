@@ -82,9 +82,9 @@
 
 ## 💽 Operating System(OS)
 
-- [운영체제란?](/contents/OperatingSystem/READMD.md#운영체제란)
-- [프로세스](contents/OperatingSystem/READMD.md#프로세스)
-- [스레드](contents/OperatingSystem/READMD.md#스레드)  
+- [운영체제란?](/contents/OperatingSystem/README.md#운영체제란)
+- [프로세스](contents/OperatingSystem/README.md#프로세스)
+- [스레드](contents/OperatingSystem/README.md#스레드)  
   <br>
   <br>
 
@@ -109,6 +109,6 @@
 ###### ETC
 
 ## 🎸 ETC
-
+- [JWT와 로그인 프로세스 구현 시 고려할 점](/contents/ETC/README.md#jwt와-로그인-프로세스-구현-시-고려할-점) 
 <br>
 <br>
